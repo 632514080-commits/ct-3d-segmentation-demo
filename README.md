@@ -2,13 +2,24 @@
 
 这是一个面向高精密影像设备算法岗位的学习项目。它用合成的小动物 CT 体数据，走通“数据生成与版本管理 → 防泄漏切分 → 传统算法基线 → 3D U-Net → 评测与错误分析 → TorchScript/ONNX 部署”的完整链路。
 
+生成三维 CT 数据
+    ↓
+建立数据清单和版本
+    ↓
+按动物主体划分训练/验证/测试集
+    ↓
+传统算法基线 + 3D U-Net
+    ↓
+逐病例评测和错误分析
+    ↓
+导出 TorchScript/ONNX
+    ↓
+验证部署模型与原模型数值一致
 
 ## 一键运行
 
 ```bash
-conda activate multimodal311
-pip install -r requirements.txt
-python -m unittest discover -s tests -v
+
 python run_demo.py --epochs 10 --device cpu
 ```
 
