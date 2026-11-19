@@ -1,0 +1,13 @@
+data/
+artifacts/*
+!artifacts/prediction.png
+!artifacts/summary.json
+!artifacts/deployment.json
+!artifacts/test_metrics.csv
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.matplotlib-cache/
+.DS_Store
+untitled.txt
+

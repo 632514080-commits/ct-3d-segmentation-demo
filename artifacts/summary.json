@@ -1,0 +1,6 @@
+{
+  "n_test": 10,
+  "model_mean_dice": 0.8035790115539415,
+  "baseline_mean_dice": 0.9573423785977072,
+  "worst_case": "mouse-005-v2"
+}
